@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fff;
+    color: #111;
+    font-family: "Open Sans";
+}
+
+.black{
+    color:#111;
+}
+
+.yellow{
+    color: orange;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 15%;
+}
+
+nav ul{
+    display: flex;
+    padding: 12px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 18px 5px #bde3ef;
+    align-items: center;
+    width: 25%;
+    justify-content: space-between;
+
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+}

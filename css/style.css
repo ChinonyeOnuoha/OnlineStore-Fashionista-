@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #fff;
+    color: #111;
+    font-family: "Open Sans";
+    overflow-x: hidden;
+}
+
+.black{
+    color:#111;
+}
+
+.yellow{
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 15%;
+}
+
+nav ul{
+    display: flex;
+    padding: 12px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 18px 0px #bde3ef;
+    align-items: center;
+    background-color: white;
+    width: 30%;
+    justify-content: space-between;
+
+}
+
+nav  li{
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+nav li:hover{
+color: rgba(145, 33, 135, 0.951);
+}
+
+#logo{
+    font-family: Satisfy;
+    font-weight: 900;
+    font-size: 40px;
+    cursor: pointer;
+
+}
+
+#hero{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+#hero div{
+    width: 100%;
+}
+
+#hero-img img{
+    position: absolute;
+    width: 70%;
+    top: 0;
+    left: 0;
+    /* z-index: -6; */
+}
+
+#hero-desc{
+    padding-top: 5%;
+}
+
+#hero-desc h1{
+    font-family: Satisfy;
+    font-weight: 700;
+    font-size: 4em;
+}
+
+#hero-desc p{
+    font-family: Satisfy;
+    font-weight: 300;
+    font-size: 2em;
+
+}
+
+#hero-desc button{
+    margin-top: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px 2px #bde3ef;
+}
+
+header::before{
+    content: "";
+    width: 100vw;
+    height: 310vh;
+    background: linear-gradient(to right, rgba(145, 33, 135, 0.551), rgb(199, 60, 157));
+    position: absolute;
+    transform: rotate(-78deg);
+    top: -1445px;
+    left:-150px;
+    z-index: -5;
+}
+
+#trendy{
+    width: 75vw;
+    margin: auto;
+    position: relative;
+    box-shadow: 2px 5px 19px rgba(145, 33, 135, 0.151);
+    background-color: #fff;
+    top: 90px;
+    padding: 50px 5%;
+    text-align: center;
+   
+}
+
+
+#trendy h2{
+    padding: 20px, 0;
+    font-weight: 700;
+    /* font-family: satisfy; */
+    font-size: 2em;
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 110vh;
+    grid-gap: 60px;
+    padding: 30px 8%;
+}
+
+.product{
+    transition: all 1s;
+}
+
+.product li{
+    display: inline-flex;
+    padding: 15px 25px;
+    color: rgba(145, 33, 135, 0.431);
+} 
+
+
+.product .product-description{
+    padding: 6px;
+    color: rgba(17, 17, 17, 0.466);
+}
+
+.product:hover{
+    box-shadow:2px 5px 19px rgba(145, 33, 135, 0.151);
+    cursor: pointer;
+}
+
+.product img{
+    width: 100%;
+    padding-top: 15px;
+    display: block;
+    margin: auto;
+}
+
+
+.product button{
+    transition: all 1s;
+}
+
+.add-to-cart-btn{
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(255, 102, 13, 0.5);
+    background: linear-gradient(to right, rgba(145, 33, 135, 0.551), rgb(199, 60, 157));
+    color:white;
+    display: none;
+    cursor: pointer;
+
+}
+
+.product:hover > .add-to-cart-btn{
+    display: inline;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+.product:hover > .product li{
+    display: inline-flex;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.add-to-cart-btn:hover{
+    box-shadow: 2px 5px 19px rgba(145, 33, 135, 0.151);
+}
+
+.product:hover > .add-to-cart-btn{
+    display: inline;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
