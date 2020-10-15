@@ -12,7 +12,6 @@
 <body>
 
     <menubar>
-
         <nav>
             <div class="page2"> <a class="logo" href="index.html"> Fashionista </a> </div>
             <ul>
@@ -22,13 +21,44 @@
         </nav>
     </menubar>
 
-    <div id="gallery">
-        <ul class="flex-container">
-            <li></li>
-        </ul>
+    <!-- Photo grid  -->
+
+    <div class="row">
+        <div class="column">
+            <img src="./img/im/0ff64e65-644f-4007-bebd-8c04b23814ef.jpg" alt="" style="width:100%" onclick = 'imageFunction(this);'>
+            <img src="./img/im/An idea I have for an African high fashion….jpg" alt="" style="width:100%" onclick = 'imageFunction(this);'>
+            <img src="./img/im/Adebimpe African Print Jacket Dress.jpg" alt="" style="width:100%" onclick = 'imageFunction(this);'>
+            <img src="./img/im/Biggest runway trends from AFI Joburg Fashion Week.png" alt="" style="width:100%" onclick = 'imageFunction(this);'>
+            <img src="./img/im/Collection_ FallWinter17 - Taibo Bacar (1).jpg" alt="" style="width:100%" onclick = 'imageFunction(this);'>
+        </div>
+
+        <div class="column">
+            <img src="./img/im/Julie de la Playa.jpg" alt="" style="width:100%" onclick = 'imageFunction(this);'>
+            <img src="./img/im/Kadealo Africa - the best of African travel, food and culture.jpg" alt="" style="width:100%" onclick = 'imageFunction(this);'>
+            <img src="./img/im/Lagos Fashion Week 2019 _ Sisiano _ BN Style.jpg" alt="" style="width:100%" onclick = 'imageFunction(this);'>
+            <img src="./img/im/MD Individualist _ Contemporary Collection Of Cohesive Seasonal Pieces.jpg" alt="" style="width:100%" onclick = 'imageFunction(this);'>
+            <img src="./img/im/Rich Mnisi _ Metal Magazine.jpg" alt="" style="width:100%" onclick = 'imageFunction(this);'>
+        </div>
+
+        <div class="column">
+            <img src="./img/im/Robert Wun Otoño Invierno 2020-2021 Pret-A-Porter….jpg" alt="" style="width:100%" onclick = 'imageFunction(this);'>
+            <img src="./img/im/The 1st Model To Walk Victoria's Secret Runway With Natural Hair, Maria, Is Now Putting African Fashion On Blast _ FashionGHANA_com_ 100% African Fashion.png" alt="" style="width:100%" onclick = 'imageFunction(this);'>
+            <img src="./img/im/TUELO NGUYUZA COLLECTIV® (@tn_collectiv) • Instagram photos and videos.jpg" alt="" style="width:100%" onclick = 'imageFunction(this);'>
+            <img src="./img/im/Viola Dress — SIKA ONLINE.jpg" alt="" style="width:100%" onclick = 'imageFunction(this);'>
+            <img src="./img/im/Trust Us, These SIKA Dresses Will Elevate Your 2020 Brunch Outfit Rotation _ BN Style.jpg" alt="" style="width:100%" onclick = 'imageFunction(this);'>
+            <img src="./img/im/Gorgeous Ankara Jumpsuit.jpg" alt="" style="width:100%" onclick = 'imageFunction(this);'>
+        </div>
+
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+          </div>
     </div>
 
 
+  <!-- Javascript -->
 
+  <script src="./gallery.js"></script>
 </body>
 </html>
